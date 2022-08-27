@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SampleModelStoreContainer" CdmEntityContainer="SampleEntities1">
+    <EntitySetMapping Name="tbl_Oders">
+      <EntityTypeMapping TypeName="SampleModel.tbl_Oders">
+        <MappingFragment StoreEntitySet="tbl_Oders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="ordername" ColumnName="ordername" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

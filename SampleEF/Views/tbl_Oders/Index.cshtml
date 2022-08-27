@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SampleEF.Models.tbl_Oders>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create",null,new { @class="btn btn-success"})
+</p>
+<table id="myTable" class="table table-responsive table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ordername)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ordername)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id},new { @class="btn btn-primary"}) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id },new { @class="btn btn-info"}) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id },new { @class="btn btn-danger"})
+        </td>
+    </tr>   
+}
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
