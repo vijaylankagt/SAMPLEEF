@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AdventureWorksDW2019ModelStoreContainer" CdmEntityContainer="AdventureWorksDW2019Entities1">
+    <EntitySetMapping Name="DimProductCategories">
+      <EntityTypeMapping TypeName="AdventureWorksDW2019Model.DimProductCategory">
+        <MappingFragment StoreEntitySet="DimProductCategory">
+          <ScalarProperty Name="ProductCategoryKey" ColumnName="ProductCategoryKey" />
+          <ScalarProperty Name="ProductCategoryAlternateKey" ColumnName="ProductCategoryAlternateKey" />
+          <ScalarProperty Name="EnglishProductCategoryName" ColumnName="EnglishProductCategoryName" />
+          <ScalarProperty Name="SpanishProductCategoryName" ColumnName="SpanishProductCategoryName" />
+          <ScalarProperty Name="FrenchProductCategoryName" ColumnName="FrenchProductCategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
