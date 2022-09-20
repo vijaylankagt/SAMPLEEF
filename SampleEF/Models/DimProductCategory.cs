@@ -11,13 +11,22 @@ namespace SampleEF.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class DimProductCategory
     {
         public int ProductCategoryKey { get; set; }
+
+        [DisplayName("Product Key")]
         public Nullable<int> ProductCategoryAlternateKey { get; set; }
+
+        [DisplayName("Product Category")]
         public string EnglishProductCategoryName { get; set; }
+
+        [DisplayName("Category Name")]
         public string SpanishProductCategoryName { get; set; }
+
+        [DisplayName("French Name")]
         public string FrenchProductCategoryName { get; set; }
     }
 }

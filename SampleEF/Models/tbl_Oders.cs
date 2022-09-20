@@ -11,12 +11,21 @@ namespace SampleEF.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class tbl_Oders
     {
+
+        [DisplayName("Id")]
         public int Id { get; set; }
+
+        [DisplayName("Product Id")]
         public Nullable<int> PId { get; set; }
+
+        [DisplayName("Order Name")]
         public string ordername { get; set; }
+
+        [DisplayName("Status")]
         public string Active { get; set; }
     }
 }

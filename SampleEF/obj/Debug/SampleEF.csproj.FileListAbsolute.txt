@@ -47,3 +47,4 @@ E:\Practice\SampleEF\SampleEF\bin\System.Web.Helpers.xml
 E:\Practice\SampleEF\SampleEF\bin\System.Web.Mvc.xml
 E:\Practice\SampleEF\SampleEF\obj\Debug\SampleEF.dll
 E:\Practice\SampleEF\SampleEF\obj\Debug\SampleEF.pdb
+E:\Practice\SampleEF\SampleEF\obj\Debug\SampleEF.csprojResolveAssemblyReference.cache
